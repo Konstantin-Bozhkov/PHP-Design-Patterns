@@ -1,11 +1,12 @@
 <?php 
-namespace FactoryPattern;
+namespace DesignPatterns;
 
+/* Product */
 class Bank{
     public $balance;
 }
 
-/* Concrete Factory */
+/* Concrete Product */
 class CityBank extends Bank{
     /**
      * @var void
@@ -15,7 +16,9 @@ class CityBank extends Bank{
         $this->balance = 3000;
     }
 }
-/* Concrete Factory */
+
+
+/* Concrete Product */
 class NationalBank extends Bank{
     /**
      * @var void
@@ -25,6 +28,8 @@ class NationalBank extends Bank{
         $this->balance = 2000;
     }
 }
+
+
 
 // Creator
 interface BankUnion
